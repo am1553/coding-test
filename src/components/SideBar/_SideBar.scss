@@ -1,0 +1,74 @@
+.sidebar {
+    width: 27.375rem;
+    background-color: $midnight-blue;
+    &__header {
+        background-color: $midnight-blue;
+        height: 6.5625rem;
+        padding: 2rem 0 0 2.5rem;
+        .progress_bar {
+            height: 0.5rem;
+            width: 22.1875rem;
+            margin-top: 0.75rem;
+            background-color: $desaturated-midnight-blue;
+            .progress {
+                height: 100%;
+                width: 70%;
+                background-color: $cyan;
+            }
+        }
+    }
+
+    &__units {
+        padding: 0 2.5rem;
+        height: 6rem;
+        margin-top: 2rem;
+        .line {
+            height: 100%;
+            width: 2px;
+            background-color: red;
+        }
+        .status {
+            display: flex;
+            .tick_mark {
+                margin-right: 1.375rem;
+            }
+            .unit_text {
+                background-color: #FFFFFF1C;
+                color: $cyan;
+                width: 2.625rem;
+                height: 1.4375rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.5rem;
+                text-transform: capitalize;
+            }
+            .unit_complete {
+                text-transform: uppercase;
+                flex: 1;
+                text-align: right;
+                color: $white;
+                opacity: 0.3;
+            }
+        }
+        .unit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 2.625rem;
+            margin-top: 0.5rem;
+            width: 100%;
+            h4 {
+                flex: 1;
+                .unit_index {
+                    color: $white;
+                    opacity: 0.3;
+                }
+            }
+            .time_duration {
+                color: $white;
+                opacity: 0.3;
+            }
+        }
+    }
+}

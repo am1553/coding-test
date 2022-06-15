@@ -1,0 +1,15 @@
+@import "./styles/Variables";
+@import "./styles/Typography";
+@import "./components/Header/Header";
+@import "./components/SideBar/SideBar";
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .main_container {
+        border-top: 1px solid #30425A;
+    }
+}
